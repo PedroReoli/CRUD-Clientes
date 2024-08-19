@@ -1,0 +1,84 @@
+﻿@model SeuProjeto.Models.Cliente
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Cliente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .details {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+            .details div {
+                margin-bottom: 10px;
+            }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .value {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #007BFF;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+    </style>
+</head>
+<body>
+
+    <h2>Detalhes do Cliente</h2>
+
+    <div class="details">
+        <div>
+            <label>Nome:</label>
+            <div class="value">@Model.Nome</div>
+        </div>
+        <div>
+            <label>Email:</label>
+            <div class="value">@Model.Email</div>
+        </div>
+        <div>
+            <label>Telefone:</label>
+            <div class="value">@Model.Telefone</div>
+        </div>
+        <div>
+            <label>Endereço:</label>
+            <div class="value">@Model.Endereco</div>
+        </div>
+
+        <a href="/Home/Index">Voltar à Lista</a>
+    </div>
+
+</body>
+</html>
