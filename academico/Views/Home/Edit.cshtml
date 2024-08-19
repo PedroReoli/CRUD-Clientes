@@ -1,0 +1,26 @@
+﻿@model SeuProjeto.Models.Cliente
+
+<h2>Editar Cliente</h2>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+    <div>
+        <label>Nome:</label>
+        <input asp-for="Nome" />
+    </div>
+    <div>
+        <label>Email:</label>
+        <input asp-for="Email" />
+    </div>
+    <div>
+        <label>Telefone:</label>
+        <input asp-for="Telefone" />
+    </div>
+    <div>
+        <label>Endereço:</label>
+        <input asp-for="Endereco" />
+    </div>
+    <div>
+        <input type="submit" value="Salvar" />
+    </div>
+</form>

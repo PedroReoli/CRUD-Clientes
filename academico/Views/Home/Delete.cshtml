@@ -1,0 +1,12 @@
+﻿@model SeuProjeto.Models.Cliente
+
+<h2>Excluir Cliente</h2>
+
+<form asp-action="DeleteConfirmed">
+    <input type="hidden" asp-for="Id" />
+    <p>Você realmente deseja excluir o cliente "@Model.Nome"?</p>
+    <div>
+        <input type="submit" value="Excluir" />
+        <a href="/Home/Index">Cancelar</a>
+    </div>
+</form>
